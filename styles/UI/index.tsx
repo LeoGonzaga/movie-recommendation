@@ -11,6 +11,7 @@ export const FlexContent = styled.div<FlexContentProps>`
   align-items: ${(props) => props.align};
   justify-content: ${(props) => props.justify};
   flex-wrap: wrap;
+  text-align: center;
 `;
 
 type RowProps = {
