@@ -65,15 +65,15 @@ const Movies: React.FC = () => {
               <Banner
                 width="100%"
                 src={`https://image.tmdb.org/t/p/original/${
-                  (data?.results?.length > 0 &&
-                    data?.results[index]?.backdrop_path) ||
-                  data?.results[index]?.poster_path
+                  data &&
+                  data.results?.length > 0 &&
+                  data.results[index]?.backdrop_path
                 }`}
                 alt=""
               />
             </Content>
             <Name>
-              {data?.results?.length > 0 && data?.results[index]?.title}
+              {data && data.results?.length > 0 && data.results[index]?.title}
             </Name>
             <Description>
               {data?.results?.length > 0 && data?.results[index]?.overview}

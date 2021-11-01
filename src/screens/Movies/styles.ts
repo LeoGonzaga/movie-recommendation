@@ -43,6 +43,7 @@ export const Button = styled.button`
 export const Back = styled.button`
   border: none;
   padding: 10px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
 `;
