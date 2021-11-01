@@ -25,3 +25,7 @@ export const Row = styled.div<RowProps>`
   height: ${(props) => props.height};
   background-color: green;
 `;
+
+export const Spacing = styled.div`
+  margin-top: 10px;
+`;

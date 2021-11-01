@@ -16,7 +16,7 @@ export const Container = styled.div<ChipProps>`
   align-items: center;
 
   background-color: ${({ theme, checked }) =>
-    checked ? "#000" : theme.primary};
+    checked ? "#502170" : theme.primary};
   color: ${({ theme }) => theme.text};
   font-weight: bold;
   font-size: 1.4rem;

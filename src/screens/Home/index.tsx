@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FlexContent } from "../../../styles/UI";
+import { FlexContent, Spacing } from "../../../styles/UI";
 import Chip from "../../components/Chip";
 import Loading from "../../components/Loading";
 import useFetch from "../../hooks/useFetch";
@@ -31,9 +31,9 @@ const Home = () => {
         <Loading />
       ) : (
         <>
-          <h1>{teste.selectedItems}</h1>
-          <button onClick={() => dispatch(add())}>mais</button>
-          <button onClick={() => dispatch(remove())}>menos</button>
+          <Spacing />
+          <h1>O quer vocêr quer ver hoje?</h1>
+
           <FlexContent justify="center">
             {data?.genres?.map(({ name, id }: DataProps) => (
               <Chip name={name} key={id} />
