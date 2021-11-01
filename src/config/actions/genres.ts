@@ -7,8 +7,7 @@ const slice = createSlice({
   },
   reducers: {
     add(state, data) {
-      state.selectedItems.push(data.payload);
-      console.log(data.payload);
+      state.selectedItems = data.payload;
     },
   },
 });

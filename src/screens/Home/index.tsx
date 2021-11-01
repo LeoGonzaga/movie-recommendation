@@ -15,8 +15,14 @@ type DataProps = {
 
 const Home = () => {
   const selectedGenres = useSelector((state: RootState) => state.genres);
+  const dispatch = useDispatch();
   const { data, loading, error, request }: any = useFetch();
   const [selected, setSelected] = useState([]);
+
+  console.log(selectedGenres.selectedItems);
+  const handleSubmit = useCallback(() => {
+    dispatch(add(selected));
+  }, [selected, dispatch]);
 
   useEffect(() => {
     request(
@@ -45,7 +51,7 @@ const Home = () => {
               />
             ))}
           </Wrapper>
-          <Button>Procurar</Button>
+          <Button onClick={handleSubmit}>Procurar</Button>
         </>
       )}
     </FlexContent>
