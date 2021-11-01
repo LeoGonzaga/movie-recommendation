@@ -41,7 +41,7 @@ const Home = () => {
       ) : (
         <>
           <Spacing />
-          <h1>O quer vocêr quer ver hoje?</h1>
+          <h1>O você quer ver hoje?</h1>
 
           <Wrapper>
             {data?.genres?.map(({ name, id }: DataProps) => (
