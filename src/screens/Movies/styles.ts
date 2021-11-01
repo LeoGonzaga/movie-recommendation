@@ -16,8 +16,7 @@ export const Content = styled.div`
 `;
 export const Banner = styled.img`
   object-fit: contain;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-radius: 20px;
 `;
 
 export const Name = styled.h1``;
@@ -39,4 +38,11 @@ export const Button = styled.button`
     font-size: 1rem;
     color: ${({ theme }) => theme.text};
   }
+`;
+
+export const Back = styled.button`
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 `;
