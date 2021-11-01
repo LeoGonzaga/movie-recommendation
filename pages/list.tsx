@@ -1,11 +1,8 @@
 import type { NextPage } from "next";
+import Movies from "../src/screens/Movies";
 
 const ListMovies: NextPage = () => {
-  return (
-    <div>
-      <h1>Lista</h1>
-    </div>
-  );
+  return <Movies />;
 };
 
 export default ListMovies;

@@ -13,8 +13,10 @@ export const darkTheme = {
 export const GlobalStyles = createGlobalStyle`
 * {
    box-sizing: border-box;
+   margin:0px;
+   padding: 0px;
 }
-body {
+body, button {
    margin: 0;
    padding: 0;
    font-family: sans-serif !important;
