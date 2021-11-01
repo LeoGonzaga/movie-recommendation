@@ -12,7 +12,6 @@ export const FlexContent = styled.div<FlexContentProps>`
   justify-content: ${(props) => props.justify};
   flex-wrap: wrap;
   text-align: center;
-
   padding: 10px;
 `;
 

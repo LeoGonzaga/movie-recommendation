@@ -3,17 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const slice = createSlice({
   name: "genres",
   initialState: {
-    selectedItems: 0,
+    selectedItems: [] as any,
   },
   reducers: {
-    add(state) {
-      state.selectedItems++;
-    },
-    remove(state) {
-      state.selectedItems--;
+    add(state, data) {
+      state.selectedItems.push(data.payload);
+      console.log(data.payload);
     },
   },
 });
 
-export const { add, remove } = slice.actions;
+export const { add } = slice.actions;
 export default slice.reducer;
